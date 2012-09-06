@@ -1,0 +1,305 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]>
+<html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Ventplan - Machen Sie sich Luft!</title>
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <!-- Included Foundation CSS Files -->
+    <link rel="stylesheet" type="text/css" href="resources/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/app.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="resources/css/ie.css">
+    <![endif]-->
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    <!-- Favicon and Feed -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <!--<link rel="alternate" type="application/rss+xml" title="ventplan Feed" href="http://www.ventplan.com/feed/">-->
+    <!--  iPhone Web App Home Screen Icon
+    <link rel="apple-touch-icon" sizes="72x72" href="resources/images/devices/icon-ipad.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="resources/images/devices/icon-retina.png"/>
+    <link rel="apple-touch-icon" href="resources/images/devices/icon.png"/>
+    -->
+    <!-- Enable Startup Image for iOS Home Screen Web App
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="apple-touch-startup-image" href="resources/images/mobile-load.png"/>
+    -->
+    <!-- Startup Image iPad Landscape (748x1024)
+    <link rel="apple-touch-startup-image" href="resources/images/devices/load-ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)"/>
+    -->
+    <!-- Startup Image iPad Portrait (768x1004)
+    <link rel="apple-touch-startup-image" href="resources/images/devices/load-ipad-portrait.png" media="screen and (min-de<link type="text/css" href="/skin/jplayer.blue.monday.css" rel="stylesheet" />vice-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)"/>
+    -->
+    <!-- Startup Image iPhone (320x460)
+    <link rel="apple-touch-startup-image" href="resources/images/devices/load.png" media="screen and (max-device-width: 320px)"/>
+    -->
+    <link rel="canonical" href="http://www.ventplan.com/"/>
+    <!-- jPlayer -->
+    <link type="text/css" href="/resources/js/jQuery.jPlayer.2.1.0/skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet"/>
+    <!-- Google -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-7031917-4']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body class="page page-id-11 page-template page-template-page-reverie-php">
+<!-- Start the main container -->
+<div id="container" class="container" role="document">
+    <!-- Row for blog navigation -->
+    <div class="row">
+        <header class="twelve columns" role="banner">
+            <div class="reverie-header">
+                <!--
+                <h1><img src="resources/images/ventplan_logo.jpg" alt="Ventplan - Auslegung von Lüftungsanlagen" /></h1>
+                <h4 class="subheader">Auslegung von Lüftungsanlagen & Berechnung von lüftungstechnischen Maßnahmen</h4>
+                <ul class="social-links options hide-on-phones">
+                    <li class="rss"><a href="feed/" style="float:right;" title="Follow via RSS"><img alt="Subscribe RSS" src="resources/images/subscribe.png"></a></li>
+                </ul>
+                -->
+                <nav role="navigation">
+                    <dl class="nav hide-on-phones">
+                        <dd id="menu-item-home" class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="index.html">Ventplan</a>
+                        </dd>
+                        <dd id="menu-item-education" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item">
+                            <a href="needful_things.html">N&uuml;tzliches</a>
+                        </dd>
+                        <dd id="menu-item-vendor" class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="vendor.html">F&uuml;r Hersteller</a>
+                        </dd>
+                        <dd id="menu-item-download" class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="download.html">Download</a>
+                        </dd>
+                        <dd id="menu-item-tools" class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="tools.html">Tools</a>
+                        </dd>
+                        <dd id="menu-item-kontakt" class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="contact.html">Kontakt</a>
+                        </dd>
+                        <dd id="menu-item-impressum" class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="imprint.html">Impressum</a>
+                        </dd>
+                    </dl>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!-- Row for main content area -->
+    <div class="container">
+        <div class="row page-header border-bottom">
+            <div class="seven columns">
+                <h1><img src="resources/images/ventplan_logo.jpg" alt="Ventplan - Auslegung von Lüftungsanlagen"/>
+                </h1>
+                <h2>
+                    Denn mit Ventplan bekommt das "Luftschloss" eine ganze andere Bedeutung...
+                </h2>
+            </div>
+            <div class="five columns pic">
+                <img src="resources/images/ventplan/screen.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="five columns">
+                <img style="float:left;" src="resources/images/ventplan/ventplan-icon.jpg"><br/><h5>Ventplan und Sweet Home 3D</h5><br/>
+                <p>Die Arbeit mit Ventplan und <a href="tools.html#SweetHome3D">Sweet Home 3D</a> erm&ouml;glicht eine einfache und professionelle Erstellung von Auslegungen und Angeboten f&uuml;r die Haustechnik.</p>
+                <p>Das Video zeigt Ihnen die Verwendung dieser Werkzeuge von der Idee bis zum Angebot.</p>
+            </div>
+            <div class="six columns">
+                <div id="jp_container_westaflexsweethomeventplan" class="jp-video">
+                    <div class="jp-type-single">
+                        <div id="jquery_jplayer_westaflexsweethomeventplan" class="jp-jplayer"></div>
+                        <div class="jp-gui">
+                            <div class="jp-video-play">
+                                <a href="javascript:;" class="jp-video-play-icon" tabindex="1">play</a>
+                            </div>
+                            <div class="jp-interface">
+                                <div class="jp-progress">
+                                    <div class="jp-seek-bar">
+                                        <div class="jp-play-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="jp-current-time"></div>
+                                <div class="jp-duration"></div>
+                                <div class="jp-controls-holder">
+                                    <ul class="jp-controls">
+                                        <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                                        <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                                        <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+                                        <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+                                        <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+                                        <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+                                    </ul>
+                                    <div class="jp-volume-bar">
+                                        <div class="jp-volume-bar-value"></div>
+                                    </div>
+                                    <ul class="jp-toggles">
+                                        <li><a href="javascript:;" class="jp-full-screen" tabindex="1" title="full screen">full screen</a></li>
+                                        <li><a href="javascript:;" class="jp-restore-screen" tabindex="1" title="restore screen">restore screen</a></li>
+                                        <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+                                        <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+                                    </ul>
+                                </div>
+                                <div class="jp-title">
+                                    <ul>
+                                        <li>Ventplan mit Westaflex und SweetHome 3D</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jp-no-solution">
+                            <span>Update Required</span>
+                            To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <hr>
+        </div>
+        <div class="row">
+            <div class="five columns">
+                <img style="float:left;" src="resources/images/ventplan/ventplan-icon.jpg"><br/><h5>Einführung in Ventplan</h5><br/>
+                <p>Schauen Sie sich das Video zur Nutzung von Ventplan an.</p>
+            </div>
+            <div class="six columns">
+                <div id="jp_container_westaflexhaustechnikapp" class="jp-video">
+                    <div class="jp-type-single">
+                        <div id="jquery_jplayer_westaflexhaustechnikapp" class="jp-jplayer"></div>
+                        <div class="jp-gui">
+                            <div class="jp-video-play">
+                                <a href="javascript:;" class="jp-video-play-icon" tabindex="1">play</a>
+                            </div>
+                            <div class="jp-interface">
+                                <div class="jp-progress">
+                                    <div class="jp-seek-bar">
+                                        <div class="jp-play-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="jp-current-time"></div>
+                                <div class="jp-duration"></div>
+                                <div class="jp-controls-holder">
+                                    <ul class="jp-controls">
+                                        <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                                        <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                                        <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+                                        <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+                                        <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+                                        <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+                                    </ul>
+                                    <div class="jp-volume-bar">
+                                        <div class="jp-volume-bar-value"></div>
+                                    </div>
+                                    <ul class="jp-toggles">
+                                        <li><a href="javascript:;" class="jp-full-screen" tabindex="1" title="full screen">full screen</a></li>
+                                        <li><a href="javascript:;" class="jp-restore-screen" tabindex="1" title="restore screen">restore screen</a></li>
+                                        <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+                                        <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+                                    </ul>
+                                </div>
+                                <div class="jp-title">
+                                    <ul>
+                                        <li>Ventplan als Westaflex Haustechnik App</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jp-no-solution">
+                            <span>Update Required</span>
+                            To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <hr>
+        </div>
+    </div>
+    <!-- End container -->
+    <footer id="content-info" role="contentinfo">
+        <div class="row">
+            <div class="twelve columns">
+                &copy; 2011-2012
+                <a target="_blank" href="http://www.art-of-coding.eu/">art-of-coding UG (haftungsbeschränkt).</a><br/>
+                &copy; 2005-2010
+                <a target="_blank" href="http://www.bensmann.com/">Informationssysteme Ralf Bensmann.</a><br/>
+                Alle Rechte vorbehalten. Nutzung unterliegt Lizenzbedingungen.<br/>
+                All Rights Reserved. Use is subject to license terms.<br/>
+                <br/>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- Container End -->
+<!-- Video player -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+<script src="/resources/js/jQuery.jPlayer.2.1.0/jquery.jplayer.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#jquery_jplayer_westaflexhaustechnikapp").jPlayer({
+            solution: "html, flash",
+            swfPath: "/resources/js/jQuery.jPlayer.2.1.0/Jplayer.swf",
+            supplied: "m4v",
+            cssSelectorAncestor: '#jp_container_westaflexhaustechnikapp',
+            ready: function() {
+                $(this).jPlayer("setMedia", {
+                    poster: "/resources/images/westaflex/WestaflexHaustechnikApp_Poster.png",
+                    m4v: "/resources/video/westaflex/WestaflexHaustechnikApp.mp4"
+                });
+            }
+        });
+        $("#jquery_jplayer_westaflexsweethomeventplan").jPlayer({
+            solution: "html, flash",
+            swfPath: "/resources/js/jQuery.jPlayer.2.1.0/Jplayer.swf",
+            supplied: "m4v",
+            cssSelectorAncestor: '#jp_container_westaflexsweethomeventplan',
+            ready: function() {
+                $(this).jPlayer("setMedia", {
+                    poster: "/resources/images/westaflex/WestaflexHaustechnikApp_Poster.png",
+                    m4v: "/resources/video/westaflex/WestaflexSweethome3DVentplan.m4v"
+                });
+            }
+        });
+    });
+</script>
+<!-- Issue Collector -->
+<script type="text/javascript" src="http://assets.zendesk.com/external/zenbox/v2.5/zenbox.js"></script>
+<style type="text/css" media="screen, projection">
+    @import url(http://assets.zendesk.com/external/zenbox/v2.5/zenbox.css);
+</style>
+<script type="text/javascript">
+    if (typeof(Zenbox) !== "undefined") {
+        Zenbox.init({
+            dropboxID:   "20080853",
+            url:         "https://artofcoding.zendesk.com",
+            tabID:       "Feedback",
+            tabColor:    "blue",
+            tabPosition: "Right"
+        });
+    }
+</script>
+</body>
+</html>

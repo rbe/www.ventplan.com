@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+    <url>
+        <loc>http://www.ventplan.com/</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://www.ventplan.com/index.html</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://www.ventplan.com/needful_things.html</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://www.ventplan.com/vendor.html</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://www.ventplan.com/download.html</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://www.ventplan.com/tools.html</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://www.ventplan.com/contact.html</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://www.ventplan.com/imprint.html</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+</urlset>

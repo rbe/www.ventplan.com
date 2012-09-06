@@ -1,0 +1,334 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]>
+<html class="no-js ie6 oldie" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7 oldie" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8 oldie" lang="en">
+<![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Ventplan - Machen Sie sich Luft!</title>
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <!-- Included Foundation CSS Files -->
+    <link rel="stylesheet" type="text/css" href="resources/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/app.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="resources/css/ie.css">
+    <![endif]-->
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Favicon and Feed -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <!--<link rel="alternate" type="application/rss+xml" title="ventplan Feed" href="http://www.ventplan.com/feed/">-->
+    <!--  iPhone Web App Home Screen Icon
+    <link rel="apple-touch-icon" sizes="72x72" href="resources/images/devices/icon-ipad.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="resources/images/devices/icon-retina.png"/>
+    <link rel="apple-touch-icon" href="resources/images/devices/icon.png"/>
+    -->
+    <!-- Enable Startup Image for iOS Home Screen Web App
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="apple-touch-startup-image" href="resources/images/mobile-load.png"/>
+    -->
+    <!-- Startup Image iPad Landscape (748x1024)
+    <link rel="apple-touch-startup-image" href="resources/images/devices/load-ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)"/>
+    -->
+    <!-- Startup Image iPad Portrait (768x1004)
+    <link rel="apple-touch-startup-image" href="resources/images/devices/load-ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)"/>
+    -->
+    <!-- Startup Image iPhone (320x460)
+    <link rel="apple-touch-startup-image" href="resources/images/devices/load.png" media="screen and (max-device-width: 320px)"/>
+    -->
+    <link rel="canonical" href="http://www.ventplan.com/"/>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-7031917-4']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body class="page page-id-11 page-template page-template-page-reverie-php">
+<!-- Start the main container -->
+<div id="container" class="container" role="document">
+<!-- Row for blog navigation -->
+<div class="row">
+    <header class="twelve columns" role="banner">
+        <div class="reverie-header">
+            <!--
+            <h1><img src="resources/images/ventplan_logo.jpg" alt="Ventplan - Auslegung von Lüftungsanlagen" /></h1>
+            <h4 class="subheader">Auslegung von Lüftungsanlagen & Berechnung von lüftungstechnischen Maßnahmen</h4>
+            <ul class="social-links options hide-on-phones">
+                <li class="rss"><a href="feed/" style="float:right;" title="Follow via RSS"><img alt="Subscribe RSS" src="resources/images/subscribe.png"></a></li>
+            </ul>
+            -->
+            <nav role="navigation">
+                <dl class="nav hide-on-phones">
+                    <dd id="menu-item-home" class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="index.html">Ventplan</a>
+                    </dd>
+                    <dd id="menu-item-education" class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="needful_things.html">N&uuml;tzliches</a>
+                    </dd>
+                    <dd id="menu-item-vendor" class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="vendor.html">F&uuml;r Hersteller</a>
+                    </dd>
+                    <dd id="menu-item-download" class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="download.html">Download</a>
+                    </dd>
+                    <dd id="menu-item-tools" class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="tools.html">Tools</a>
+                    </dd>
+                    <dd id="menu-item-kontakt" class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="contact.html">Kontakt</a>
+                    </dd>
+                    <dd id="menu-item-impressum" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item">
+                        <a href="imprint.html">Impressum</a>
+                    </dd>
+                </dl>
+            </nav>
+        </div>
+    </header>
+</div>
+<!-- Row for main content area -->
+<div class="container">
+    <div class="row page-header border-bottom">
+        <div class="seven columns">
+            <h1><img src="resources/images/ventplan_logo.jpg" alt="Ventplan - Auslegung von Lüftungsanlagen"/></h1>
+            <h2>
+                <!--Irgendwer muss ja dafür geradestehen.-->
+                Damit nicht alles nur hei&szlig;e Luft ist!<br/>
+                <br/>
+                Wir haben keine Angst vor dem Luftstr&ouml;mungspr&uuml;fer!
+            </h2>
+        </div>
+        <div class="five columns pic">
+            <img src="resources/images/ventplan/screen.jpg">
+        </div>
+    </div>
+    <div class="row">
+        <div class="four columns">
+            <h3>Betreiber</h3>
+            <p>
+                art of coding UG (haftungsbeschr&auml;nkt)<br/>
+                Gr&uuml;ner Weg 23a<br/>
+                48366 Laer<br/>
+            </p>
+            <p>
+                Telefon: 02554 912969-0<br/>
+                Email: <a href="mailto:contact@art-of-coding.eu">contact@art-of-coding.eu</a><br/>
+                Webseite: <a target="_blank" href="http://www.art-of-coding.eu/">www.art-of-coding.eu</a>
+            </p>
+            <p>
+                Amtsgericht Steinfurt, HRB 9049<br/>
+                Gesch&auml;ftsf&uuml;hrer: Ralf Bensmann<br/>
+            </p>
+            <p>
+                Steuernummer: 311/5840/2780<br/>
+                USt ID: DE815258776<br/>
+            </p>
+        </div>
+        <div class="four columns">
+            <h3>V.i.S.d.P.</h3>
+            <p>
+                Herr Ralf Bensmann<br/>
+                Gr&uuml;ner Weg 23a<br/>
+                48366 Laer<br/>
+            </p>
+            <p>
+                Telefon: 02554 912969-0<br/>
+                Email: <a href="mailto:contact@bensmann.com">contact@bensmann.com</a><br/>
+                Webseite: <a target="_blank" href="http://www.bensmann.com/">www.bensmann.com</a>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+    </div>
+
+    <div class="row">
+        <div class="twenty columns">
+            <h3>Rechtliche Hinweise</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="twenty columns">
+            <h5>1. Haftungsbeschränkung</h5>
+            <p>Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt erstellt. Der Anbieter übernimmt jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Inhalte. Die Nutzung der Inhalte der Website erfolgt auf eigene Gefahr des Nutzers. Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Mit der reinen Nutzung der Website des Anbieters kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande.</p>
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+    </div>
+    <div class="row">
+        <div class="twenty columns">
+            <h5>2. Externe Links</h5>
+            <p>Diese Website enthält Verknüpfungen zu Websites Dritter ("externe Links"). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle dieser externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.</p>
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+    </div>
+    <div class="row">
+        <div class="twenty columns">
+            <h5>3. Urheber- und Leistungsschutzrechte</h5>
+            <p>Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt. Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.</p>
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+    </div>
+    <div class="row">
+        <div class="twenty columns">
+            <h5>4. Datenschutz</h5>
+            <p>Durch den Besuch der Website des Anbieters können Informationen über den Zugriff (Datum, Uhrzeit, betrachtete Seite) gespeichert werden. Diese Daten gehören nicht zu den personenbezogenen Daten, sondern sind anonymisiert. Sie werden ausschließlich zu statistischen Zwecken ausgewertet. Eine Weitergabe an Dritte, zu kommerziellen oder nichtkommerziellen Zwecken, findet nicht statt. Der Anbieter weist ausdrücklich darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen und nicht lückenlos vor dem Zugriff durch Dritte geschützt werden kann. Die Verwendung der Kontaktdaten des Impressums zur gewerblichen Werbung ist ausdrücklich nicht erwünscht, es sei denn der Anbieter hatte zuvor seine schriftliche Einwilligung erteilt oder es besteht bereits eine Geschäftsbeziehung. Der Anbieter und alle auf dieser Website genannten Personen widersprechen hiermit jeder kommerziellen Verwendung und Weitergabe ihrer Daten.</p>
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+    </div>
+    <div class="row">
+        <div class="twenty columns">
+            <h5>5. Besondere Nutzungsbedingungen</h5>
+            <p>Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Nummern 1. bis 4. abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen.</p>
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+    </div>
+    <div class="row">
+        <div class="twenty columns">
+            <h5>6. Logdateien des Webservers</h5>
+            <p>
+                In den Logfiles dieses Webservers und weiteren, integrierten Statistiktools werden automatisch solche Daten gespeichert, die Ihr Browser an uns übermittelt. Dazu gehören:
+            <ul class="disc">
+                <li>Browsertyp und -version</li>
+                <li>Verwendetes Betriebssystem</li>
+                <li>Referrer URL (die zuvor besuchte Seite)</li>
+                <li>Hostname des zugreifenden Rechners (IP Adresse)</li>
+                <li>Uhrzeit der Serveranfrage</li>
+            </ul>
+            Diese Daten sind für uns in der Regel nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen, die Daten werden zudem nach einer statistischen Auswertung gelöscht.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+    </div>
+    <div class="row">
+        <div class="twenty columns">
+            <h5>7. Cookies</h5>
+            <p>Die Internetseiten verwenden an mehreren Stellen so genannte Cookies. Sie dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert. Die meisten der von uns verwendeten Cookies sind so genannte "Session-Cookies". Sie werden nach Ende Ihres Besuchs automatisch gelöscht.</p>
+            <p>Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren. Um dieses Cookies zu löschen oder die Cookiebehandlung generell zu verändern, konsultieren Sie bitte die Hilfe Ihres Browser. In der Regel finden sich diese Einstellungen unter "Extras -> Einstellungen Datenschutz" (Firefox) oder unter "Extras -> Internetoptionen -> Datenschutz" (Internet Explorer).</p>
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+    </div>
+    <div class="row">
+        <div class="twenty columns">
+            <h5>8. Kommentare, Kontaktformular</h5>
+            <p>Selbstverständlich erfassen und speichern wir solche Informationen, die Sie auf unseren Webseiten eingeben oder uns in sonstiger Weise übermitteln. Das betrifft etwa Kommentare, Namen, Email-Adressen und URLs, die Sie in die entsprechenden Kommentarfelder eintragen. Diese Angaben geschehen freiwillig und werden in keiner Weise überprüft, die Verwendung von Pseudonymen etc. ist möglich. Wir weisen darauf hin, dass Name, angegebene Webseite und Kommentare für jeden Benutzer der Seite einzusehen sind.</p>
+            <p>Zur Spamvermeidung kann jeder Kommentar zeitweise (vor der Freigabe und Anzeige in diesem Blog) von uns oder einem Drittanbieter automatisiert überprüft werden.</p>
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+    </div>
+    <div class="row">
+        <div class="twenty columns">
+            <h5>9. Google</h5>
+            <h6>9.1. Google Analytics</h6>
+            <p>Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. ("Google").</p>
+            <p>Google Analytics verwendet sog. "Cookies", Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglicht. Die durch den Cookie erzeugten Informationen über Ihre Benutzung diese Website (einschließlich Ihrer IP-Adresse) wird an einen Server der Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten für die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können.</p>
+            <p>Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.</p>
+            <p>Bitte informieren Sie sich diesbezüglich unter unseren Allgemeinen Geschäftsbedingungen. Bitte berücksichtigen Sie zusätzlich Googles Datenschutzerklärung.</p>
+            <h6>9.2. Google Adsense / Werbeanzeigen</h6>
+            <p>Auf dieser Website nutzen wir den Google Adsense Service, um themenbezogenen Werbeanzeigen zu schalten. Ihr Browser speichert eventuell ein von Google Inc. gesendetes Cookie. Die dort gespeicherten Informationen (niemals persönliche Daten wie Name, Adresse, E-Mail-Adresse etc.) über Ihren Besuch sowohl auf dieser, als auch auf anderen Websites, kann dazu genutzt werden, um weitere Anzeigen zu Produkten und Diensten anzuzeigen, die Sie möglicherweise interessieren. Falls Sie mehr über diese Methoden erfahren möchten oder wissen möchten, welche Möglichkeiten Sie haben, damit diese Informationen nicht von Google Inc. verwendet werden kann, klicken Sie hier.</p>
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+    </div>
+    <div class="row">
+        <div class="twenty columns">
+            <h5>10. Facebook</h5>
+            <p>Diese Website verwendet Social Plugins ("Plugins") des sozialen Netzwerkes facebook.com, welches von der Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA betrieben wird ("Facebook"). Die Plugins sind mit einem Facebook Logo oder dem Zusatz ?Facebook Social Plugin? gekennzeichnet. Wenn Sie eine Blogseite aufrufen, die ein solches Plugin enthält, baut Ihr Browser eine direkte Verbindung mit den Servern von Facebook auf. Der Inhalt des Plugins wird von Facebook direkt an Ihren Browser übermittelt und von diesem in die Webseite eingebunden.</p>
+            <p>Durch die Einbindung der Plugins erhält Facebook die Information, dass Sie die entsprechende Seite aufgerufen haben. Sind Sie bei Facebook eingeloggt kann Facebook den Besuch Ihrem Facebook-Konto zuordnen. Wenn Sie mit den Plugins interagieren, zum Beispiel den "Gefällt mir" Button betätigen oder einen Kommentar abgeben, wird die entsprechende Information von Ihrem Browser direkt an Facebook übermittelt und dort gespeichert. Zweck und Umfang der Datenerhebung und die weitere Verarbeitung und Nutzung der Daten durch Facebook sowie Ihre diesbezüglichen Rechte und Einstellungsmöglichkeiten zum Schutz Ihrer Privatssphäre entnehmen Sie bitte den Datenschutzhinweisen von Facebook.</p>
+            <p>Wenn Sie nicht möchten, dass Facebook über diese Website Daten über Sie sammelt, müssen Sie sich vor Ihrem Besuch auf unseren Webseiten bei Facebook ausloggen.</p>
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+    </div>
+    <div class="row">
+        <div class="twenty columns">
+            <h5>Quellenangaben</h5>
+            <ul class="disc">
+                <li>
+                    <a target="_blank" href="http://www.juraforum.de/">Juraforum.de - Disclaimer, Gesetze, Urteile, Lexikon</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.gregel.com/about/datenschutzerklaerung/">gregel.com Datenschutzerklärung</a>
+                </li>
+                <li>Beitrag
+                    <a target="_blank" href="http://www.gregel.com/8059/facebook-gefaellt-mir-gehoert-in-die-datenschutzerklaerung/">Facebook "Gefällt mir" gehört in die Datenschutzerklärung</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <hr>
+    </div>
+</div>
+<!-- End container -->
+<footer id="content-info" role="contentinfo">
+    <div class="row">
+        <div class="twelve columns">
+            &copy; 2011-2012
+            <a target="_blank" href="http://www.art-of-coding.eu/">art-of-coding UG (haftungsbeschränkt).</a><br/>
+            &copy; 2005-2010
+            <a target="_blank" href="http://www.bensmann.com/">Informationssysteme Ralf Bensmann.</a><br/>
+            Alle Rechte vorbehalten. Nutzung unterliegt Lizenzbedingungen.<br/>
+            All Rights Reserved. Use is subject to license terms.<br/>
+            <br/>
+        </div>
+    </div>
+</footer>
+</div>
+<!-- Container End -->
+<!-- Issue Collector -->
+<script type="text/javascript" src="http://assets.zendesk.com/external/zenbox/v2.5/zenbox.js"></script>
+<style type="text/css" media="screen, projection">
+    @import url(http://assets.zendesk.com/external/zenbox/v2.5/zenbox.css);
+</style>
+<script type="text/javascript">
+    if (typeof(Zenbox) !== "undefined") {
+        Zenbox.init({
+            dropboxID:   "20080853",
+            url:         "https://artofcoding.zendesk.com",
+            tabID:       "Feedback",
+            tabColor:    "blue",
+            tabPosition: "Right"
+        });
+    }
+</script>
+</body>
+</html>
