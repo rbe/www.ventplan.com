@@ -22,227 +22,473 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
 /* ---------------------------------------------------
    Customized Adjustments of Foundation for WordPress
 --------------------------------------------------- */
-	
-	/* Auto Height for Images for Responsive Design */
-	img { height: auto; }
-	li { margin-bottom: 2%!important; }
 
-	/* ZURB Navi for Foundation */
-	dl.nav { display: block; width: auto; height: 27px; margin: 0 0 18px; }
-	dl.nav dt, dl.nav dd { float: left; display: inline; }
-	dl.nav dt { color: #999; font-weight: normal; }
-	dl.nav dd a { text-decoration: none; margin-left: 6px; padding: 5px 12px;
-	 -webkit-border-radius: 12px; -moz-border-radius: 12px; }
-	dl.nav dd a:hover { background: #eee; }
-	dl.nav dd.current-menu-item a,
-	dl.nav dd.current-post-ancestor a,
-	dl.nav dd.current-menu-parent a,
-	dl.nav dd.current-post-parent a
-	 { background: #2a1d69; color: #fff; }
- 
-	/* Foundation-specific presentation CSS by ZURB */
-	body { padding-bottom: 60px; font-weight: normal !important;  }
-	.social-links {	position: absolute;	right: 0; margin-top: -28px; }
-	.social-links li { float: right; display: block; margin-right: -15px; }
-	.options .rss {	margin: 0; padding: 0 0 0 10px; float: right; margin-bottom: 5px; }
-	div.reverie-header { margin: 0 0 30px 0; padding: 20px 0 0 0; border-bottom: solid 1px #ccc; }
-	div.reverie-header h1 { margin-bottom: 0; padding: 0; }
-	div.reverie-header h1 a { color: #181818; }
-	div.reverie-header h1 a:hover { color: #181818; }
-	div.reverie-header .subheader { margin-bottom: 9px; }
-	div.highlight { margin-bottom: 12px; }
-	img.beta { position: absolute; top: 0px; right: 0px; }
+/* Auto Height for Images for Responsive Design */
+img {
+    height: auto;
+}
+
+li {
+    margin-bottom: 2% !important;
+}
+
+/* ZURB Navi for Foundation */
+dl.nav {
+    display: block;
+    width: auto;
+    height: 27px;
+    margin: 0 0 18px;
+}
+
+dl.nav dt, dl.nav dd {
+    float: left;
+    display: inline;
+}
+
+dl.nav dt {
+    color: #999;
+    font-weight: normal;
+}
+
+dl.nav dd a {
+    text-decoration: none;
+    margin-left: 6px;
+    padding: 5px 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+}
+
+dl.nav dd a:hover {
+    background: #eee;
+}
+
+dl.nav dd.current-menu-item a,
+dl.nav dd.current-post-ancestor a,
+dl.nav dd.current-menu-parent a,
+dl.nav dd.current-post-parent a {
+    background: #2a1d69;
+    color: #fff;
+}
+
+/* Foundation-specific presentation CSS by ZURB */
+body {
+    padding-bottom: 60px;
+    font-weight: normal !important;
+}
+
+.social-links {
+    position: absolute;
+    right: 0;
+    margin-top: -28px;
+}
+
+.social-links li {
+    float: right;
+    display: block;
+    margin-right: -15px;
+}
+
+.options .rss {
+    margin: 0;
+    padding: 0 0 0 10px;
+    float: right;
+    margin-bottom: 5px;
+}
+
+div.reverie-header {
+    margin: 0 0 30px 0;
+    padding: 20px 0 0 0;
+    border-bottom: solid 1px #ccc;
+}
+
+div.reverie-header h1 {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+div.reverie-header h1 a {
+    color: #181818;
+}
+
+div.reverie-header h1 a:hover {
+    color: #181818;
+}
+
+div.reverie-header .subheader {
+    margin-bottom: 9px;
+}
+
+div.highlight {
+    margin-bottom: 12px;
+}
+
+img.beta {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
 
 /* -----------------------------------------
    Styling Basic WordPress Outputs
 ----------------------------------------- */
-	
-	/* Resizing the Blog Post */
-	.post-box p { line-height: 21px!important; }
-	.post-box { font-size: 14px; line-height: 20px!important; }
-	.post-box h1 { font-weight: bold; font-size: 30px; line-height: 1; margin-bottom: 2px; }
-	.post-box h2 { font-weight: bold; font-size: 26px; line-height: 1; margin-bottom: 2px; }
-	.post-box h3 { font-size: 22px;	}
-	.post-box h4 { font-size: 18px;	}
-	
-	/* Add Divider for Listed Posts */
-	.divider { background:url(../resources/images/divider.png) no-repeat center top; height:36px; margin:20px 0 27px; }	
-	
-	/* Add Align Class for Images */
-	img.alignright { float: right; margin: 0 0 18px 18px; }
-	img.alignleft { float: left; margin: 0 18px 18px 0; }
-	
-	/* Add HTML5 Caption Class for Images */
-	figure.figure {	background: #EEE; margin: 0 0 18px;	-webkit-border-radius: 3px;	-moz-border-radius: 3px; display: inline-block; }
-	figure.figure figcaption { display: block; padding: 8px 10px; font-size: 13px; line-height: 18px; color: #555; }
-	figure.alignright.figure { float: right; margin: 0 0 18px 18px; }
-	figure.alignleft.figure { float: left; margin: 0 18px 18px 0; }
-	.logo-line {height:55px; margin-bottom: 15px; }
-	.logo-line h4 {font-size: 21px; font-size: 2.1rem; padding: 15px 0 0 80px; }
-	.clr {clear:both;}
-	.pic {padding: 23px 0; }
 
-		
-	/* Sidebar Adjustment */
-	.sidebar-section { padding-bottom: 10px; padding-top: 20px;	font-size: 1.3rem; font-weight: normal;	}
-	
-	/* Footer Nav */
-	.footer-section { padding-bottom: 10px; padding-top: 20px; font-size: 1.3rem; font-weight: normal; }
-	.footer-nav li { display: block; float: right; padding-left: 3%; margin-bottom: 0; }
+/* Resizing the Blog Post */
+.post-box p {
+    line-height: 21px !important;
+}
+
+.post-box {
+    font-size: 14px;
+    line-height: 20px !important;
+}
+
+.post-box h1 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.post-box h2 {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.post-box h3 {
+    font-size: 22px;
+}
+
+.post-box h4 {
+    font-size: 18px;
+}
+
+/* Add Divider for Listed Posts */
+.divider {
+    background: url(../resources/images/divider.png) no-repeat center top;
+    height: 36px;
+    margin: 20px 0 27px;
+}
+
+/* Add Align Class for Images */
+img.alignright {
+    float: right;
+    margin: 0 0 18px 18px;
+}
+
+img.alignleft {
+    float: left;
+    margin: 0 18px 18px 0;
+}
+
+/* Add HTML5 Caption Class for Images */
+figure.figure {
+    background: #EEE;
+    margin: 0 0 18px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    display: inline-block;
+}
+
+figure.figure figcaption {
+    display: block;
+    padding: 8px 10px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #555;
+}
+
+figure.alignright.figure {
+    float: right;
+    margin: 0 0 18px 18px;
+}
+
+figure.alignleft.figure {
+    float: left;
+    margin: 0 18px 18px 0;
+}
+
+.logo-line {
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+.logo-line h4 {
+    font-size: 21px;
+    font-size: 2.1rem;
+    padding: 15px 0 0 80px;
+}
+
+.clr {
+    clear: both;
+}
+
+.pic {
+    padding: 23px 0;
+}
+
+/* Sidebar Adjustment */
+.sidebar-section {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+/* Footer Nav */
+.footer-section {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.footer-nav li {
+    display: block;
+    float: right;
+    padding-left: 3%;
+    margin-bottom: 0;
+}
 
 /*  -------------------------------------------------------
     Customize Foundation Style Pagination for WP-Pagenavi
-    ---------------------------------------------------- */ 
-    
-    div.wp-pagenavi { display: block; height: 24px; margin-left: -5px; color: #555; }
-    div.wp-pagenavi a, div.wp-pagenavi span { float: left; display: block; padding: 6px 7px 4px; height: 24px; color: #555; font-size: 15px; margin-left: 5px; }
-    div.wp-pagenavi span.pages { padding-left: 0; }
-    div.wp-pagenavi .current, div.wp-pagenavi a:hover { border-bottom: solid 2px #00a6fc; color: #141414; }
-    div.wp-pagenavi span.unavailable:hover { border-bottom: none; }
-	
+    ---------------------------------------------------- */
+
+div.wp-pagenavi {
+    display: block;
+    height: 24px;
+    margin-left: -5px;
+    color: #555;
+}
+
+div.wp-pagenavi a, div.wp-pagenavi span {
+    float: left;
+    display: block;
+    padding: 6px 7px 4px;
+    height: 24px;
+    color: #555;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+div.wp-pagenavi span.pages {
+    padding-left: 0;
+}
+
+div.wp-pagenavi .current, div.wp-pagenavi a:hover {
+    border-bottom: solid 2px #00a6fc;
+    color: #141414;
+}
+
+div.wp-pagenavi span.unavailable:hover {
+    border-bottom: none;
+}
+
 /*  --------------------------
-    Your Customized Style
-    ----------------------- */ 
-    
-    /* Entry Social Share */
-    .entry-share {
+Your Customized Style
+----------------------- */
+
+/* Entry Social Share */
+.entry-share {
     padding-bottom: 10px;
-    }
-    
-    /* Entry Author Section */
-    .entry-author {
+}
+
+/* Entry Author Section */
+.entry-author {
     border-top: 1px solid #DDD;
     padding: 20px 0 5px 0;
-    }
-    
-    .entry-author p {
-    line-height: 17px!important;
+}
+
+.entry-author p {
+    line-height: 17px !important;
     font-size: 13px;
-    }
-    
-    .entry-author img {
-    border:1px solid #e4e4e4;
-    padding:3px;
-    background:#fff;
+}
+
+.entry-author img {
+    border: 1px solid #e4e4e4;
+    padding: 3px;
+    background: #fff;
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     float: left;
-    }
-    
-    .entry-author .entry-author-bio {
+}
+
+.entry-author .entry-author-bio {
     margin-left: 70px;
-    }
-    
-    /* Entry Related Posts */
-    .related-posts {
+}
+
+/* Entry Related Posts */
+.related-posts {
     border-top: 1px solid #DDD;
     padding-top: 20px;
-    }
-    .related-posts a {
+}
+
+.related-posts a {
     color: #666;
-    }
-    .related-posts h4 {
+}
+
+.related-posts h4 {
     padding-bottom: 10px;
-    }
-    .related-posts li {
-    font-size: 12px!important;
-    line-height: 16px!important;
-    } 
-    .related-posts img{
+}
+
+.related-posts li {
+    font-size: 12px !important;
+    line-height: 16px !important;
+}
+
+.related-posts img {
     padding: 1px;
     border: 1px solid #DDD;
-    }
-    
-    /* Sidebar Adjustment */
-    .sidebar-section {
+}
+
+/* Sidebar Adjustment */
+.sidebar-section {
     padding-bottom: 10px;
     padding-top: 20px;
     font-size: 1.3rem;
     font-weight: normal;
-    }
+}
 
-
-    /* Footer Nav */
-    #form {
-    float:left;
+/* Footer Nav */
+#form {
+    float: left;
     width: 50%;
     padding: 0 30px 30px 0;
     font-size: 1.3rem;
     font-weight: normal;
-    min-height:250px;
-    }
+    min-height: 250px;
+}
 
-    
-    /* Footer Nav */
-    #content-info {
+/* Footer Nav */
+#content-info {
     padding-top: 30px;
     font-size: 1.3rem;
     font-weight: normal;
-    }
-    
-    
-    .footer-section {
+}
+
+.footer-section {
     padding-bottom: 10px;
     padding-top: 20px;
     font-size: 1.3rem;
     font-weight: normal;
-    }
-    
-    ul.footer-nav {
+}
+
+ul.footer-nav {
     display: block;
     float: right;
-    width:300px;
-    }
+    width: 300px;
+}
 
-    .footer-nav li {
+.footer-nav li {
     display: block;
     float: left;
     padding-left: 3%;
     margin-bottom: 0;
-    }
-    
-    /* Adjust Highlight for Gist */
-    .highlight {
-    background: none!important;
-    }
-    
-    /*	--------------------------------------------------
-       	Page & Section Headers (for Reverie)
-       	-------------------------------------------------- */
-       /*	Page headers for marketing pages ---------- */
-       	div.page-header { border-bottom: 2px solid #eee; margin-bottom: 20px; }
-       	div.page-header h1 { display: block; font-size: 81px; line-height: 1; font-weight: bold; letter-spacing: -3px; margin: 0; color: #222; margin-top: 30px; }
-       	div.page-header h2 { margin: 10px 0 10px; font-size: 24px; line-height: 1.25; color: #777; font-weight: normal; letter-spacing: 0; }
-       	div.page-header h2 a { text-decoration: underline; font-weight: inherit; line-height: inherit; }
-       	div.page-header h2 a.button { display: inline-block; position: relative; top: -5px; }
-       	div.page-header h1 span, 
-       	div.page-header h2 span { display: block; }
-       	div.page-header h1 small, 
-       	div.page-header h2 small { font-size: 75%; font-weight: normal; }
-       	
-       	div.page-header p { margin-top: 10px; margin-left: 12%;	}
-       	div.page-header p a { margin-right: 20px; }
-    
-    		.showcase { margin-bottom: 20px; }
-    		.reverie-showcase-iphone { max-height: 328px; overflow: hidden; }
-       	.border-bottom { border-bottom: 1px solid #DDD; }
-       	#resize { position: fixed; right:0px; bottom:0px; padding: 0px; margin: 0px; }
-       	
-       	code {
-       	  font-family: Monaco, Andale Mono, Courier New, monospace!important;
-       	  background-color: #fee9cc;
-       	  color: rgba(0, 0, 0, 0.75);
-       	  padding: 1px 3px;
-       	  font-size: 12px!important;
-       	}
-       	
-       	.reverie-showcase {
-       	position: relative!important;
-       	margin-top: 10px!important;
-       	}
-       	
-       	.reverie-showcase li {
-       	float: left!important;
-       	margin-bottom: 0!important;
-       	}
+}
+
+/* Adjust Highlight for Gist */
+.highlight {
+    background: none !important;
+}
+
+/*	--------------------------------------------------
+           Page & Section Headers (for Reverie)
+           -------------------------------------------------- */
+/*	Page headers for marketing pages ---------- */
+div.page-header {
+    border-bottom: 2px solid #eee;
+    margin-bottom: 20px;
+}
+
+div.page-header h1 {
+    display: block;
+    font-size: 81px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: -3px;
+    margin: 0;
+    color: #222;
+    margin-top: 30px;
+}
+
+div.page-header h2 {
+    margin: 10px 0 10px;
+    font-size: 24px;
+    line-height: 1.25;
+    color: #777;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+div.page-header h2 a {
+    text-decoration: underline;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+div.page-header h2 a.button {
+    display: inline-block;
+    position: relative;
+    top: -5px;
+}
+
+div.page-header h1 span,
+div.page-header h2 span {
+    display: block;
+}
+
+div.page-header h1 small,
+div.page-header h2 small {
+    font-size: 75%;
+    font-weight: normal;
+}
+
+div.page-header p {
+    margin-top: 10px;
+    margin-left: 12%;
+}
+
+div.page-header p a {
+    margin-right: 20px;
+}
+
+.showcase {
+    margin-bottom: 20px;
+}
+
+.reverie-showcase-iphone {
+    max-height: 328px;
+    overflow: hidden;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #DDD;
+}
+
+#resize {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+code {
+    font-family: Monaco, Andale Mono, Courier New, monospace !important;
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px !important;
+}
+
+.reverie-showcase {
+    position: relative !important;
+    margin-top: 10px !important;
+}
+
+.reverie-showcase li {
+    float: left !important;
+    margin-bottom: 0 !important;
+}
