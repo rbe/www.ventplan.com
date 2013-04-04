@@ -10,8 +10,8 @@
     RewriteRule ^latest.*$ /download.html [L,R=301]
     # /download/Ventplan-EDITION_OS_MAJ_MIN_PATCH.EXT -> aktuelle Version
     # Ventplan-Westaflex_windows_7_2_4.exe
-    RewriteCond %{REQUEST_URI} !^/download/Ventplan-.*7_2_4.*
-    RewriteRule ^download/Ventplan-(.*)_(\w+)_(\d)_(\d)_(\d)\.(.*)$ /download/Ventplan-$1_$2_7_2_4.$6 [R]
+    RewriteCond %{REQUEST_URI} !^/download/Ventplan-.*7_2_5.*
+    RewriteRule ^download/Ventplan-(.*)_(\w+)_(\d)_(\d)_(\d)\.(.*)$ /download/Ventplan-$1_$2_7_2_5.$6 [R]
 </IfModule>
 
 ## <IfModule mod_expires.c>
