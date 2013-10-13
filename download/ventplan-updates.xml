@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<updateDescriptor baseUrl="https://www.dropbox.com/sh/s0cpek1jjkks3pf/PPqncSUyDy/">
+  <entry targetMediaFileId="247" updatableVersionMin="7.0.0" updatableVersionMax="" fileName="Ventplan-Westaflex_windows-x64_7_2_7.exe" newVersion="7.2.7" newMediaFileId="247" fileSize="62603264" bundledJre="windows-amd64-1.7.0_40" archive="false">
+    <comment language="de" />
+  </entry>
+</updateDescriptor>
+
